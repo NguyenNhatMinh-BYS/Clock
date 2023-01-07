@@ -8,6 +8,7 @@
 body{
     
 }
+/* //with PC */
 .main{
     
   
@@ -69,4 +70,29 @@ body{
 .none{
     display: none;
     
+}
+/* responsive mobie */
+@media only screen and (min-width: 46.25em) and (max-width:64em){
+    .main_clock{
+        font-size: 80px;
+    }
+    .main_date{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:46em){
+    .main_clock{
+        font-size: 50px;
+    }
+    .main_date{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:20em){
+    .main_clock{
+        font-size: 40px;
+    }
+    .main_date{
+        font-size: 20px;
+    }
 }
