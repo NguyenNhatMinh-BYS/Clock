@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="./clock.png" type="image/x-icon" >
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <audio src=""></audio>
+    <div class="print">
+        <button >Print</button>
+    </div>
     <div class="change_bg">
         <img src="./tim.png" alt="" class="img">
         <img src="./xanh.png" alt="" class="img2 none">
@@ -34,7 +37,52 @@
             <span>/</span>
             <span id="year">2003</span>
         </div>
+        
+        <div class="inputsearch">
+            <input type="text" placeholder="dd/mm/yyyy" class="input">
+            <div class="icon_search">
+            <i class='bx bx-search '></i>
+        </div>
+        </div>
+        <div class="information">
+            <ul> <div class="text">Function</div>
+                <li class="information_text up "  >Search Day</li>
+                <li class="information_text">Countdown </li>
+                <li class="information_text">Check Leap Year</li>
+            </ul>
+        </div>
     </div>
+    <div class="morder">
+        <div class="morder_main">
+        <div class="morder_head">
+            <div class="morder_result" >RESULT</div>
+            
+            <i class='bx bx-x-circle' ></i>
+       
+        </div>
+        <div class="morder_body">
+            <ul>
+                <li class="morder_text">
+                    <span>Search Day</span>
+                    <span>:</span>
+                    <span class="SearchDay" style="color: #ff4368"></span>
+                </li>
+                <li class="morder_text">
+                    <span>Countdown</span>
+                    <span>:</span>
+                    <span class="Countdown" style="color: #ff4368"></span>
+                </li>
+                <li class="morder_text">
+                    <span>Check Leap Year</span>
+                    <span>:</span>
+                    <span class="CheckLeapYear" style="color: #ff4368"></span>
+                </li>
+            </ul>
+           
+        </div>
+        </div>
+    </div>
+
     
 </body>
 <script src="./test.js"></script>
