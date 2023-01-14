@@ -180,6 +180,7 @@ searchInput.addEventListener("keyup",function(e){
     case 13:
         if(searchInput.value.length===0){
             alert("Please write a search!!");
+            break;
         }
         else{
             var resultDay = norm();
@@ -187,7 +188,7 @@ searchInput.addEventListener("keyup",function(e){
             if(resultDay!== 0){
                 print(resultDay);
             } // 
-            
+            break;
         }
         
    }
@@ -213,6 +214,7 @@ input.addEventListener("click",(e)=>{
             
             if(searchInput.value.length===0){
                 alert("Please write a search!!");
+                
             }
             else{
                
@@ -220,10 +222,12 @@ input.addEventListener("click",(e)=>{
                 
                 if(resultDay!== 0){
                     print(resultDay);
-                    e.defaultPrevented();
+                    
+                    
                 } // 
                 
             }
+            e.stopPropagation();
         },5000)
     }) 
     
